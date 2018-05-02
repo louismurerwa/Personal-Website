@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: thin;
+  }
+
+img {
+    border-radius: 80%;
+    }
+
+}
+
+section {
+    /* display: flex; */
+    min-height: 500px;
+
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 20%;
+    color: white;
+    padding: 1vh;
+    font-size: 4vh;
+}
+h2 {
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+}
+
+hr {
+  border: 0;
+height: 1px;
+background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+header {
+    background-image: url("http://thimble.cz/en/img/osobni-web.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-clip: border-box;
+    margin: -1%;
+    min-height: 802px;
+    text-align: center;
+    padding: 15px;
+    font-family: Montserrat;
+
+
+}
+header h1{
+  font-size: 60px;
+}
+
+header h2{
+  color:white;
+  font-size:40px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    margin: 5%;
+    background-size: contain;
+    width: 86%;
+}
+
+nav ul {
+
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 40px;
+
+}
+
+nav a:hover {
+    color: violet;
+}
+
+nav a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+#about {
+  min-height: 802px;
+    background: white;
+  text-align: center;
+  align-items: center;
+  background-color:white;
+  width: 100%;
+
+}
+
+#about h2{
+  padding-top:40px;
+}
+
+ #about .card {
+
+   display: inline-block;
+   margin: 2%;
+   text-align: center;
+   background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#about .card p{
+  padding: 10px;
+  text-align: justify;
+  margin: 15px;
+
+
+
+}
+#about .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#about .container {
+
+  }
+
+#about .row {
+
+
+  justify-content: space-around;
+}
+
+#about .col{
+
+
+}
+
+
+#about .col p{
+  display: inline-flex;
+
+  padding:15px;
+
+}
+
+#projects {
+  min-height: 800px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+
+
+
+
+
+}
+.section-heading{
+  align-items: center;
+  text-align: center;
+}
+
+#projects .card p{
+
+  text-align: center;
+
+
+
+}
+#projects.container{
+
+}
+#projects p{
+  background-color:white ;
+
+}
+#projects h2{
+  color:black;
+}
+#projects .row {
+display: inline-block;
+flex-direction: column-reverse;
+
+}
+#projects .col {
+  display: inline-block;
+  flex-direction: column-reverse;
+
+
+}
+
+
+#projects img {
+
+}
+
+#projects ul {
+  list-style: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    content: space-evenly;
+}
+.flex-4 {
+    background: rgb(255, 255, 255);
+    box-shadow: 3px 2px 2px rgb(187, 187, 187);
+    border-radius: 0px;
+    margin: 5px;
+    padding: 5px 20px;
+    flex: 3;
+}
+
+footer {
+  background-color: rgba(0,0,0,1);
+  color: white;
+  margin:-1%;
+  background-origin: content-box;
+  padding-bottom: 1%;
+  align-items: absolute;
+  text-align: center;
+
+
+}
+footer a{
+  color:white;
+}
+footer .fa {
+  padding: 0px;
+  color: white;
+  height: 2px;
+  align: center;
+}
+footer .headline {
+
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding-top: 3px;
+  height: 35px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 10%) {
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .logo {
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #logo {
+    width: 75vw;
+    margin: 0 auto;
+  }
+
+  nav {
+    height: 15vh;
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav ul {
+
+    justify-content: center;
+  }
+
+  main {
+    height: 110vh;
+
+  }
+
+
+
+  #about .top {
+    height: 72px;
+  }
+
+  #about  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about h3 {
+    height: 32px;
+    margin-top: 5px;
+    margin-bottom: -15px;
+    color: red;
+  }
+
+  #about .col {
+    width: 90vw;
+  }
+
+  #projects {
+    height: 220vh;
+  }
+
+  #projects .row {
+    display: flex;
+
+  }
+
+  #projects .col {
+
+  }
+
+  #projects img {
+    height: 50vh;
+    width: auto;
+  }
+  #about.card{
+    margin:30%;
+  }
+  #about.row{
+
+  }
+  #about .col{
+
+    display: flex;
+
+  }
