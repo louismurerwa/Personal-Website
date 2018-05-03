@@ -6,9 +6,6 @@ body {
     font-style: thin;
   }
 
-img {
-    border-radius: 80%;
-    }
 
 }
 
@@ -159,6 +156,11 @@ nav a {
   padding:15px;
 
 }
+#about img{
+
+      border-radius: 80%;
+
+}
 
 #projects {
   min-height: 800px;
@@ -181,7 +183,7 @@ nav a {
 
 #projects .card p{
 
-  text-align: center;
+
 
 
 
@@ -202,6 +204,7 @@ flex-direction: column-reverse;
 
 }
 #projects .col {
+
   display: inline-block;
   flex-direction: column-reverse;
 
@@ -210,6 +213,7 @@ flex-direction: column-reverse;
 
 
 #projects img {
+  border-radius: 50%;
 
 }
 
@@ -217,20 +221,46 @@ flex-direction: column-reverse;
   list-style: none;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    content: space-evenly;
+
+#portifolio {
+  text-align: center;
+  min-height: 650px;
+
+
+
 }
-.flex-4 {
-    background: rgb(255, 255, 255);
-    box-shadow: 3px 2px 2px rgb(187, 187, 187);
-    border-radius: 0px;
-    margin: 5px;
-    padding: 5px 20px;
-    flex: 3;
+
+#portifolio .row {
+  padding-top: 4%;
+
+  display:inline-block;
+  flex-direction: column-reverse;
+
+
+
 }
+
+/* Create four equal columns that floats next to each other */
+#portifolio .col{
+
+  display: inline-block;
+  flex-direction: column-reverse;
+
+}
+
+/* Content */
+#portifolio .content {
+
+  margin: 5px;
+  border-style: inset;
+  border-width: thin;
+
+}
+#portifolio img{
+
+  border-radius: 0% ;
+}
+
 
 footer {
   background-color: rgba(0,0,0,1);
@@ -350,3 +380,10 @@ footer .headline {
     display: flex;
 
   }
+
+  #portifolio .row{
+
+  }
+  #portifolio .col {
+    display: flex;
+      }
