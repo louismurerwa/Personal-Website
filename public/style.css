@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-
+    /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
     font-family: 'Montserrat', sans-serif;
     font-style: thin;
   }
@@ -39,13 +39,13 @@ background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
 header {
-    background-image: url("http://www.zimbabwetourism.net/wp-content/uploads/2016/11/city-of-harare-zimbabwe.jpg");
+    background-image:url("../public/img/background2.jpeg");
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
     background-clip: border-box;
     margin: -1%;
-    min-height: 802px;
+    min-height: 830px;
     text-align: center;
     padding: 15px;
     font-family: Montserrat;
@@ -122,21 +122,9 @@ nav a {
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
-
-#about .card p{
-  padding: 10px;
-  text-align: justify;
-  margin: 15px;
-
-
-
+#about .container{
+  margin-bottom: 40px;
 }
-#about .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-#about .container {
-
-  }
 
 #about .row {
 
@@ -149,7 +137,6 @@ nav a {
 
 }
 
-
 #about .col p{
   display: inline-flex;
 
@@ -159,6 +146,42 @@ nav a {
 #about img{
 
       border-radius: 80%;
+
+}
+
+#background{
+  background-attachment: fixed;
+  background-image:url("../public/img/background8.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-clip: border-box;
+  margin: -1%;
+
+}
+#background .row {
+    display: flex;
+
+    margin: 3% 13%;
+}
+#background .card  {
+
+      font-weight: 200;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: #fff;
+      border: 2px solid ;
+      border-color: black;
+      border-radius: 2px;
+      margin: 1%;
+      width: 30%;
+}
+
+#background .card-body{
+
+    line-height: 1.5;
+    padding: 0% 10%;
 
 }
 
@@ -222,50 +245,61 @@ flex-direction: column-reverse;
 }
 
 
-#portifolio {
-  text-align: center;
-  min-height: 950px;
-
-
-
+* {
+  box-sizing: border-box;
 }
+
 
 #portifolio .row {
-  padding-top: 4%;
-
-  display:inline-block;
-  flex-direction: column-reverse;
-
-
-
+  margin:1% 10%;
+  display:flex;
 }
 
-/* Create four equal columns that floats next to each other */
-#portifolio .col{
 
-  display: inline-block;
-  flex-direction: column-reverse;
-
-}
 
 /* Content */
-#portifolio .content {
+#portifolio .card {
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  font-weight: 200;
+  position: relative;
+ flex-direction: column;
+ text-align: center;
+ border: 2px solid ;
+ border-radius: 2px;
+ width: 31%;
+ margin: 1%;
 
-  margin: 5px;
-  border-style: inset;
-  border-width: thin;
+}
 
+#portifolio .card:hover {
+  box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
+}
+#portifolio .container {
+  padding: 6px 20px;
 }
 #portifolio img{
-
-  border-radius: 0% ;
+  height:250px;
+  padding: 10px;
 }
+#portifolio .container{
+  line-height: 1.5;
+  padding: 0% 10%;
+
+}
+
+
 
 
 footer {
-  background-color: rgba(0,0,0,1);
+   border:solid;
+  background: #3C3B3F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: white;
-  margin:-1%;
+  margin:0 -1% -4% -1%;
   background-origin: content-box;
   padding-bottom: 1%;
   align-items: absolute;
@@ -289,6 +323,9 @@ footer .headline {
   font-size: 15px;
   padding-top: 3px;
   height: 35px;
+}
+footer i{
+  margin:1%;
 }
 
 /*Media Queries*/
